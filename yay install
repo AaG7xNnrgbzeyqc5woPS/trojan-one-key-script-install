@@ -1,0 +1,7 @@
+install yay,
+$git clone https://aur.archlinux.org/yay.git
+$cd yay
+$makepkg -si
+
+note:
+只能用普通用户，有sudo权限的普通用户，不能用root用户。
