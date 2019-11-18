@@ -1,0 +1,17 @@
+1, 在 arch 服务器上开通 AUR 库
+  为了安装 byobu ,tmux的前端
+ 
+
+see:
+https://wiki.archlinux.org/index.php/Arch_User_Repository_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
+1 准备
+确保 base-devel 软件包组已被完全安装 (pacman -S --needed base-devel)。
+
+2，安装 yay AUR助手
+Installing yay
+
+You can install yay by cloning the git repo and building it. Use the below command to install yay in Arch Linux :
+
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
