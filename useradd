@@ -1,0 +1,25 @@
+------------------------
+新增用户登录 linux 服务器
+1,使用 ssh key 登录
+2,有root 权限，sudo切换到 root
+3,没有密码
+---
+
+#useradd -m john
+
+#vim /etc/ssh/sshd_config 
+AllowUsers root john
+
+#使用同root一样的ssh key登录
+#将 /root/.ssh/authorized_keys 复制到 /home/john/.ssh/authorized_keys 
+#注意两个文件的所有者不同
+
+#sudo -u john mkdir /home/john/.ssh
+#sudo -u john touch /home/john/.ssh/authorized_keys
+
+#cd /home/john/.ssh
+#ls -l
+#cat  ~/.ssh/authorized_keys > authorized_keys
+
+--------------------
+重启服务器sshd，从客户端使用 john用户 和 ssh keys 登录 OK
