@@ -5,3 +5,65 @@ $makepkg -si
 
 note:
 只能用普通用户，有sudo权限的普通用户，不能用root用户。
+
+-------------------------
+ 在Arch Linux/Manjaro系统中使用yay的方法
+
+yay安装好后，应该可以使用了，请注意，你不需要使用sudo权限，有关yay的基本用法，请参阅下面的示例。
+
+示例1：使用yay安装包
+
+使用选项-S使用yay从AUR安装软件包：
+
+$ yay -S package
+
+示例2：使用yay删除包
+
+要删除包，请使用-Rns选项：
+
+$ yay -Rns package
+
+示例3：启动包选择菜单
+
+使用：
+
+$ yay <Search Term>
+
+示例4：使用yay升级已安装的软件包
+
+要升级所有已安装的包，请使用以下选项：
+
+$ yay -Syu
+
+ 要包含开发包，请使用：
+
+$ yay -Syu --devel --timeupdate
+
+示例5：使用yay清除不需要的依赖项
+
+使用选项可删除系统上所有不需要的依赖项：
+
+$ yay -Yc
+
+示例6：使用yay打印系统统计信息
+
+要打印系统统计信息，请使用-Ps：
+
+$ yay -Ps
+
+示例7：生成用于开发更新的开发包DB
+
+$ yay -Y --gendb
+
+至此，yay基本使用方法就讲到这了。
+ 附：使用yay安装Chef Development Kit的方法
+
+运行命令：yay -S --noconfirm chef-dk即可安装Chef Development Kit（简写Chef DK）。其它方法可以参考在Ubuntu 18.04中安装Chef Development Kit/Chef Workstation，总的来说，使用yay安装是最方便的，它仅运行一条命令。
+
+安装完成后可使用yay -Qi chef-dk命令检查安装的版本。
+
+--------------------
+see:
+https://ywnz.com/linuxjc/4143.html
+ 
+
