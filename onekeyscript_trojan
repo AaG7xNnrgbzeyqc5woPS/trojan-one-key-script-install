@@ -1,0 +1,43 @@
+参考：
+------------------------------------
+  无惧GFW防火墙升级封锁！最新一键搭建翻墙服务器方法！秒开4K油管无压力！
+  比SSR/V2Ray更简单快捷的Trojan自建教程，附苹果iOS，安卓Android，PC客户端设置（2019年11月13日）
+https://www.youtube.com/watch?v=shF8bMUvvpw
+
+『Atrandys』全新科学上网方式Trojan | 完美伪装 | 一键脚本（2018年版本）
+https://www.youtube.com/watch?v=BVwcuNMzv7w
+
+trojan vs v2ray ws tls1.3速度对比，娱乐为主（2019年11月3日）
+https://www.youtube.com/watch?v=wLKCyyz3SdU
+
+
+《最简单的Trojan一键脚本，效率高/速度快/延迟低，支持tls1.3，系统要求>=Centos7》
+https://www.atrandys.com/2019/1963.html  
+https://www.atrandys.com/2018/1110.html #2018年老文章，参考用
+
+tps://www.vpsrb.com/519.html #VPS上实用的 一键脚本/教程/工具 合集
+
+--------------------------------------------------------------
+
+原先的一键脚本安装需要 Centos7/8,本次实验使用 arch linux, 看看会遇到哪些坑。
+
+
+----------------------------------------------
+系统要求及脚本介绍
+1、系统>=centos7，用centos8最好，内核可直接开启bbr不需升级。
+2、域名解析到VPS并生效。
+3、脚本自动续签https证书
+4、自动配置伪装网站，位于/usr/share/nginx/html/目录下，可自行替换其中内容
+----------------------------------------
+---------------------------------------
+一、使用一键脚本安装
+
+    curl -O https://raw.githubusercontent.com/atrandys/trojan/master/trojan_centos7.sh && chmod +x trojan_centos7.sh && ./trojan_centos7.sh
+
+另外建议安装bbr，以下脚本安装，不赘述了
+
+    cd /usr/src && wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+--------------------------------------------
+客户端安装，略
+
+
