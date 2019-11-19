@@ -21,7 +21,7 @@ https://www.zhihu.com/question/51746286
 
 (3)如果想一直使用root权限，要通过su切换到root用户。
 那我们首先要重设置root用户的密码：
-sudo passwd root
+sudo passwd root    #重点，如何给root设置密码
 这样就可以设置root用户的密码了。
 
 之后就可以自由的切换到root用户了
