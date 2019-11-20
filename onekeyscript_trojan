@@ -62,4 +62,12 @@ tps://www.vpsrb.com/519.html #VPS上实用的 一键脚本/教程/工具 合集
     缺动态库，就都装上，
 7，测试：可以通过 trojan看  youtube.com上的视频，看 4K视频，可达到 60Mbps.不过不稳定，还要再测试原因，进行改进。
    --终于装上了trojan,下一步在linux装客户端
+8,安装trojan在 manjaro linux， 
+  1) pacman -S trojan
+  2) 命令行 trojan 启动，会报错，一一排除就可以啦
+  3） trojan -v, trojan -h
+  4) 配置文件在 /etc/trojan/config
+  5) fullchain.cer 拷贝到 /etc/trojan/目录下，使用管理员权限 sudo
+  6) 测试：浏览youtube.com OK！
+  
 
