@@ -38,7 +38,12 @@ tps://www.vpsrb.com/519.html #VPS上实用的 一键脚本/教程/工具 合集
 
     cd /usr/src && wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 --------------------------------------------
-客户端安装，略
+二、下载Windows客户端
+
+安装完成后，会展示一条下载地址，复制地址，并下载下来即可。
+三、搭配浏览器插件使用
+解压缩下载的trojan-cli.zip的压缩包，进入文件夹，双击start.bat，开启Trojan服务，Trojan会监听本地1080端口。然后下载switchomega
+
 
 ------------
 安装笔记：
@@ -52,5 +57,9 @@ tps://www.vpsrb.com/519.html #VPS上实用的 一键脚本/教程/工具 合集
 4，验证：可以下载客户端，可以打开伪装网站http://www.example.com, https://www.example.com.两个协议都支持，不会自动从80跳转到443端口
    在浏览器中查看帮我申请的证书，过期时间是3个月后，说明是新申请的。目前一切OK！
 5，trojan一键脚本 只需要域名就可以，不需要邮箱，就能帮我申请证书，方便简单。其他的自动安装。
-
+6,  使用一键脚本配置好的原版的客户端
+    注意看说明，本地sock5监听 127.0.0.1:1080,不要搞错
+    缺动态库，就都装上，
+7，测试：可以通过 trojan看  youtube.com上的视频，看 4K视频，可达到 60Mbps.不过不稳定，还要再测试原因，进行改进。
+   --终于装上了trojan,下一步在linux装客户端
 
