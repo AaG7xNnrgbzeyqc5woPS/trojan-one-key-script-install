@@ -66,8 +66,19 @@ tps://www.vpsrb.com/519.html #VPS上实用的 一键脚本/教程/工具 合集
   1) pacman -S trojan
   2) 命令行 trojan 启动，会报错，一一排除就可以啦
   3） trojan -v, trojan -h
-  4) 配置文件在 /etc/trojan/config
+  4) 配置文件在 /etc/trojan/config.json
   5) fullchain.cer 拷贝到 /etc/trojan/目录下，使用管理员权限 sudo
   6) 测试：浏览youtube.com OK！
+ 9，启动 trojan为服务，
+   使用  systemctl status trojan 查看状态，出错信息
+        systemctl restart trojan 在更新配置文件后，重启trojan 服务
+    注意：config.json 配置文件中证书要使用 绝对路径，否则找不到 
+      "cert"=/etc/trojan/fullchain.cer 
+    测试：浏览器中浏览youtube.com OK!
+    --至此,trojan已经完全安装成功，等用一阵子在来反应情况，是否稳定，速度快不快，会不会被墙。
+      v2ray流量多了，会被墙，要重新启动猫和路由器，换一个本地ip。
+      
+      -------------------------------
+      
   
 
