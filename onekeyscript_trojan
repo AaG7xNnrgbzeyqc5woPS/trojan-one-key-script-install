@@ -41,6 +41,10 @@ tps://www.vpsrb.com/519.html #VPS上实用的 一键脚本/教程/工具 合集
 二、下载Windows客户端
 
 安装完成后，会展示一条下载地址，复制地址，并下载下来即可。
+如果你真的忘记下载了，那么进入/usr/share/nginx/html/目录下，找到一个乱码文件夹，进入会看到客户端文件，使用sftp下载下来即可。
+注释：这个乱码文件夹是16位字母数字，这个目录下可以看到客户端文件，这个文件是 zip包，最关键的里面有客户端配置文件。
+    浏览器下载路径：https://www.example.com/16位乱码/trojan-cli.zip
+    
 三、搭配浏览器插件使用
 解压缩下载的trojan-cli.zip的压缩包，进入文件夹，双击start.bat，开启Trojan服务，Trojan会监听本地1080端口。然后下载switchomega
 
